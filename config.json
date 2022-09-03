@@ -1,0 +1,40 @@
+{
+  "description": "This is config file for running of main.py , create config , substituted args from argparse function",
+  "arch": "vgg16",
+  "data_type": "catsdogs",
+  "method_type": "lrp",
+
+  "train": false,
+  "save": false,
+  "resume": true,
+  "optimize_method": "sgd",
+  "epochs": 2,
+  "lr":0.001,
+  "momentum": 0.9,
+
+  "prune": true,
+  "prune_cnn": true,
+  "prune_fc": true,
+  "prune_train": false,
+
+  "classes": [12, 82, 86, 89, 94],
+  "samples": 10,
+
+  "fine_tune": false,
+  "fine_tune_conv": true,
+  "fine_tune_fc": true,
+
+  "train_batch_size":16,
+  "test_batch_size":16,
+  "num_workers": 2,
+  "pin_memory": true,
+  "persistent_workers": true,
+
+  "seed": false,
+  "no_cuda": false,
+  "norm": true,
+  "total_pr": 0.96,
+  "pr_step": 0.05,
+  "showlrp": false,
+  "log_name": false
+}

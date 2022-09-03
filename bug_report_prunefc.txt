@@ -1,0 +1,2 @@
+prune_fc not support for others criterion
+prune_fc影响了总参数数量，其他准则不剪枝fc层，剪枝数量却增加，导致性能下降迅速并截断。
